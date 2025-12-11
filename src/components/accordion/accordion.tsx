@@ -45,11 +45,11 @@ const Accordion = () => {
                   enableMultiSelection ? () => handleMultiSelection(id) : () => handleSelection(id)
                 }
               >
-                <h3 className='text-2xl  border-b'>{question}</h3>
+                <h3 className='text-2xl  border-b'>Question: {question}</h3>
                 <span className='text-2xl'>{selected === id ? '-' : '+'}</span>
               </div>
               {(selected === id || selectedArray.indexOf(id) !== -1) && (
-                <div className='text-xl'>{answer}</div>
+                <div className='text-xl'>Answer: {answer}</div>
               )}
             </div>
           ))
